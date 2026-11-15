@@ -7,7 +7,7 @@ It was my first experience with HTML, CSS and JavaScript, and was a fun learning
 
 The original project documentation from 2022 includes the website structure, target audience, responsive layout sketches and visual design mockups:
 
-- [Design Specification](docs/design-specification.pdf)
+- [Design Specification](docs/design-specifikation.pdf)
 - [Design Mockups](docs/cafe-design.pdf)
 
 ## Features
