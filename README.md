@@ -35,7 +35,7 @@ The project has intentionally been kept close to the original implementation to 
 - This is a fictional café created for educational purposes.
 - The reservation form is for demonstration only and does not store or submit real bookings.
 - Weather data is provided by the Open-Meteo API.
-- The project was originally created in 2022 and updated in 2026.
+- The project was originally created in 2022, without the use of AI, and updated in 2026.
 
 ## Screenshots
 
