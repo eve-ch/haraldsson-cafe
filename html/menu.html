@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Menu - Haraldsson Cafe</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/main.css" rel="stylesheet" />
+        <link href="../images/icon.ico" rel="icon" />
+        <meta name="description" content="Welcome to Haraldsson Café, a café and restaurant located in the South of Sweden.
+        We offer many delicious foods and dishes. Come and try our weekend brunch-buffé or order something from our menu that you can find on this page." />
+        <script src="../js/main.js" type="module"></script>
+    </head>
+
+    <body id="menuBody">
+        <header>
+            <h2 class="hc">H:C</h2>
+            <img src="../images/icon.ico" alt="Icon" class="iconNav" />
+
+            <!--<p class="openMenu">OPEN MENU</p>-->
+            <button class="openMenu">OPEN MENU</button>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Start</a></li>
+                    <li class="menuNav"><a href="menu.html" class="active">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reservations.html">Reservations</a></li>
+                    <li class="weatherNav"><a href="weather.html">Weather</a></li>
+                    <li><a href="find.html">Find Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section>
+                <h1 class="logo">Haraldsson Café</h1>
+                <div class="checkmark">
+                    <p class="stem"></p>
+                    <p class="kick"></p>
+                </div>
+                <h2>MENU</h2>
+                <hr />
+                <p>Open: Sat-Sun 10:00-20:00 & Weekdays 16:00-20:00</p>
+            </section>
+
+            <div class="buffet">
+                <section class="buffetItemOne">
+                    <h2>Brunch-Buffet</h2>
+                    <p>(Saturday & Sunday)</p>
+                    <br />
+                    <p>Our Brunch-buffet is open on Saturdays and Sundays from 10:00-14:00. 
+                        Includes a selection of home baked breads, scones, pancakes and eggs. 
+                        Jam, cheese, ham and other toppings. As well as fresh fruit and vegetables 
+                        and some other goods that can vary from week to week. Beverage such as Tea, 
+                        Coffee and Lemonade is included.
+                    </p>
+                </section>
+
+                <section class="buffetItemTwo">
+                    <h2>Price</h2>
+                    <p>Kids age 0-3: 45kr</p>
+                    <p>Kids age 3-12: 90kr</p>
+                    <p>Kids age 12+ & Adults: 140kr</p>
+                </section>
+            </div>
+
+            <div class="gallery">
+                <img src="../images/breakfastOneS.jpg" alt="Breakfast buffet">
+                <img src="../images/sconesS.jpg" alt="Scones with jam and butter">
+                <img src="../images/breakfastTwoS.jpg" alt="Breakfast buffet">
+                <hr />
+            </div>
+
+            <section>
+                <h2>Menu</h2>
+                <table class="foodMenu"></table>
+                <hr />
+
+                <h2>Dessert</h2>
+                <table class="dessertMenu"></table>
+                <hr />
+
+                <h2>Drinks</h2>
+                <table class="drinkMenu"></table>
+                <hr />
+
+            </section>
+
+            <div id="gridParent" data-carousel>
+
+
+                <p id="gridItem3" class="slideImage" data-active>
+                    <br />
+                    At Haraldsson Café we try to use as much of our home-grown vegatables and products as possible.
+                    Some of our products, such as honey, lemonade, jams and eggs will always be our own produce.<br><br>
+                    H:C
+                </p>
+
+                <p id="gridItem1" class="slideImage">
+                    <img src="../images/bologneseS.jpg" alt="Pasta bolognese"/>
+                </p>
+
+                <p id="gridItem2" class="slideImage">
+                    <img src="../images/chocolateCakeS.jpg" alt="A piece of chocolate cake"/>
+                </p>
+
+                <p id="gridItem4" class="slideImage">
+                    <img src="../images/burgerS.jpg" alt="Burger with fries"/>
+                </p>
+
+                <p id="gridItem5" class="slideImage">
+                    <img src="../images/lemonadeS.jpg" alt="Glass of lemonade"/>
+                </p>
+
+                <p id="gridItem6" class="slideImage">
+                    <img src="../images/teapotS.jpg" alt="Teapot and cookies"/>
+                </p>
+
+                <p id="gridItem7" class="slideImage">
+                    <img src="../images/pastaPenneS.jpg" alt="Pasta penne in a white sauce"/>
+                </p>
+
+                <button class="carouselButton Prev" data-carousel-button="prev">&#8656;</button>
+                <button class="carouselButton Next" data-carousel-button="next">&#8658;</button>
+
+                <p class="helptext">Click the arrows to see more Images!</p>
+
+            </div>
+
+        </main>
+        <footer>
+            <address>
+                <p class="heading" >Adress</p>
+                <p>23412 Adress to the Restaurant.</p>
+            </address>
+
+            <address>
+                <p class="heading" >Phone</p>
+                <p>(xxx) xxx-xxxx</p>
+            </address>
+
+            <address>
+                <p class="heading" >Email</p>
+                <p>haraldssonCafé@hc.hc</p>
+            </address>
+        </footer>
+    </body>
+</html>

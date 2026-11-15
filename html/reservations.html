@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reservation - Haraldsson Cafe</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/main.css" rel="stylesheet" />
+        <link href="../images/icon.ico" rel="icon" />
+        <meta name="description" content="Welcome to Haraldsson Café, a café and restaurant located in the South of Sweden. 
+        Here you can make an reservation at our restaurant to secure a table for you and your company." />
+        <script src="../js/main.js" type="module"></script>
+    </head>
+
+    <body id="reservationsBody">
+        <header>
+            <h2 class="hc">H:C</h2>
+            <img src="../images/icon.ico" alt="Icon" class="iconNav" />
+
+            <!--<p class="openMenu">OPEN MENU</p>-->
+            <button class="openMenu">OPEN MENU</button>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="../index.html">Start</a></li>
+                    <li class="menuNav"><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="reservations.html" class="active">Reservations</a></li>
+                    <li class="weatherNav"><a href="weather.html">Weather</a></li>
+                    <li><a href="find.html">Find Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+
+                <h1 class="logo">Haraldsson Café</h1>
+                <div class="checkmark">
+                    <p class="stem"></p>
+                    <p class="kick"></p>
+                </div>
+
+                <h2>RESERVATIONS</h2>
+                <hr />
+                <p>
+                    For a guaranteed place at our restaurant in the evening please make a reservation down below by filling  in the form. 
+                    If you don't have a reservation we can not guarantee you a place at a table. Note that we only take reservations for the evening restaurant.
+                    In the summer you're allowed to bring your own picnic equipment to have a lunch in our garden as long as you
+                    pick up after yourself and bring back all our equipment such as plates, glasses and cutlery. 
+                    We recommend you to check the weather beforehand if you plan on having a picnic or sit outside. 
+                </p>
+                <br>
+                <p style="color: red">Detta är endast ett demo-formulär!</p>
+
+                <form id="reservationForm" method="post"> 
+                    <fieldset>
+                        <p>
+                            <label for="FirstName">First Name*: </label>
+                            <input type="text" name="firstname" id="FirstName" required />
+                        </p>
+
+                        <p>
+                            <label for="LastName">Last Name*: </label>
+                            <input type="text" name="lastname" id="LastName"  required />
+                        </p>
+
+                        <p>
+                            <label for="Email">E-mail*: </label>
+                            <input type="email" name="email" id="Email" required />
+                        </p>
+
+                        <p>
+                            <label for="Phone">Phone: </label>
+                            <input type="tel" name="phone" id="Phone" />
+                        </p> 
+
+                        <P>
+                            <label for="Date">Date for Reservation*: </label>
+                            <input type="date" name="date" id="Date" required />
+                        </P>
+
+                        <p>
+                            <label for="People">Number of People: </label>
+                            <select name="people" id="People" >
+                                <option value="one">1</option>
+                                <option value="two">2</option>
+                                <option value="three">3</option>
+                                <option value="four">4</option>
+                                <option value="five">5</option>
+                                <option value="six">6</option>
+                                <option value="seven">7</option>
+                                <option value="eight">8</option>
+                                <option value="nine">9</option>
+                                <option value="ten">10</option>
+                                <option value="eleven">11</option>
+                                <option value="twele">12</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="Comments">Comments: </label>
+                            <textarea name="comments" rows="5" cols="20" id="Comments"></textarea>
+                        </p>
+
+                        <p>
+                            <input type="submit" value="Submit your reservation" />
+                            <input type="reset" value="Clear the form" />
+                        </p>
+                    </fieldset>
+
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <address>
+                <p class="heading" >Adress</p>
+                <p>23412 Adress to the Restaurant.</p>
+            </address>
+
+            <address>
+                <p class="heading" >Phone</p>
+                <p>(xxx) xxx-xxxx</p>
+            </address>
+
+            <address>
+                <p class="heading" >Email</p>
+                <p>haraldssonCafé@hc.hc</p>
+            </address>
+        </footer>
+    </body>
+</html>

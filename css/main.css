@@ -1,0 +1,814 @@
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url(fonts/merriweather/Merriweather-Regular.ttf);
+}
+
+
+/*Background Images*/
+#indexBody{
+    background: rgb(116, 156, 119) url(../images/gardenL.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+#menuBody{
+    background: rgb(116, 156, 119) url(../images/tableL.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+#aboutBody, #thanksBody{
+    background: rgb(116, 156, 119) url(../images/rosebenchL.jpg) no-repeat fixed center;
+    background-size: cover; 
+}
+
+#reservationsBody{
+    background: rgb(116, 156, 119) url(../images/insideL.jpg) no-repeat fixed center;
+    background-size: cover;  
+}
+
+#findBody{
+    background: rgb(116, 156, 119) url(../images/findUsL.jpg) no-repeat fixed center;
+    background-size: cover;  
+}
+
+#weatherBody{
+    background: rgb(116, 156, 119) url(../images/glassesL.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+
+
+/*General*/
+html{
+    font-size: 100%;
+}
+
+
+body{
+    font: 300 1rem/1.375 Merriweather, Georgia, serif;
+    color: #141414;
+}
+
+
+h1{
+    font-style: italic;
+    margin: 0 1rem;
+}
+
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+hr{
+    border: 1px solid rgba(42, 71, 44, 0.9);
+}
+
+img{
+    width: 100%;
+}
+
+
+/*Header and nav*/
+header{
+    width: 100%;
+    height: 3.2rem;
+    background-color: rgba(223, 233, 224, 0.9);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.openMenu{
+    font: 300 1rem/1.375 Merriweather, Georgia, serif;
+    background-color:rgba(207, 219, 209, 0.9);;
+    display: none;
+    border-radius: 3.2rem;
+    border: none;
+}
+
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    display: block;
+    color: #141414;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1.3rem;
+    border-radius: 3.2rem;
+    transition: 0.2s;
+    margin: 0.65rem 0.3rem;
+}
+
+nav  a:hover, nav a:focus{
+    font-weight: 600;
+    background-color: rgba(155, 184, 157, 0.9);
+}
+
+nav ul li a.active{
+    font-weight: 600;
+    background-color: rgba(155, 184, 157, 0.9);
+    display: block;
+}
+
+
+.hc{
+    font-style: italic;
+    margin: 0 1rem;
+    width: 5.5rem;
+}
+
+
+/*Main*/
+main{
+    max-width: 74rem;
+    background-color: white;
+    text-align: center;
+}
+
+.welcomeText{
+    margin-bottom: 3rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#thanksBody main{
+    margin-top: 5rem;
+}
+
+#aboutBody main h3, #aboutBody main p{
+    text-align: left;
+}
+
+.logo{
+    position: absolute;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    text-shadow: -6px -3px 5px rgb(4, 10, 6);
+}
+
+.gallery img{
+    object-fit: cover;
+}
+
+/*Icons*/
+.iconNav{
+    width: 1.85rem;
+    margin: 0 auto 0 0;
+    padding: 0;
+}
+
+.icon{
+    width: 1.9rem;
+    margin: 4rem 1rem;
+}
+
+#instagramIcon{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/*Weather Page*/
+.weatherContainer{
+    margin: 2rem 0 2rem 0;
+    background-color: rgba(167, 185, 168, 0.7);
+    border-radius: 1.25rem;
+    padding: 3rem 0.2rem 3rem 0.2rem;
+}
+
+.weatherContainer article{
+    display: inline-block;
+    background: url("../images/cloudS.jpg");
+    border-radius: 1.3rem;
+    border: solid 3px rgb(54, 54, 54);
+    margin: 0.5rem;
+    width: 10.9rem;
+    height: 18.75rem;
+}
+
+.weatherContainer article p, .weatherContainer article h3{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 10.625rem;
+    line-height: 1.875rem;
+    margin: 0;
+    height: 25%;
+}
+
+.temperature, .weekday{
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/*Menu Page buffet*/
+.buffet{
+    display: flex;
+}
+
+.buffetItemTwo h2, .buffetItemTwo p{
+    background-color: rgba(42, 71, 44, 0.9);
+    color: white;
+}
+
+
+/*Menu Page Tables*/
+table{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5rem;
+    max-width: 60rem;
+}
+
+td.food{
+    padding-top: 1rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+td.description{
+    text-align: left;
+    font-style: italic;
+}
+
+td.price{
+    text-align: right;
+    width: 4.4rem;
+    font-weight: bold;
+}
+
+/*Form*/
+fieldset{
+    margin-top: 3rem;
+    text-align: left;
+    border: solid medium rgba(42, 71, 44, 0.9);
+}
+
+fieldset p{
+    margin: 1rem 1rem;
+}
+
+
+/*Footer*/
+footer{
+    background-color: rgba(42, 71, 44, 0.9);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer address{
+    padding: 2rem 2rem;
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/*Arrow*/
+.checkmark {
+	display: inline-block;
+	width: 5rem;
+	height: 5rem;
+	-ms-transform: rotate(225deg);
+	/* IE 9 */
+	-webkit-transform: rotate(225deg);
+	/* Chrome, Safari, Opera */
+	transform: rotate(225deg);
+}
+
+.stem {
+    margin: 0;
+	position: absolute;
+	width: 1.875rem;
+	height: 5rem;
+	background-color: rgba(255, 255, 255, 0.8);
+	left: 6.25rem;
+	top: 6.25rem;
+}
+
+.kick {
+    margin: 0;
+	position: absolute;
+	width:3.125rem;
+	height: 1.875rem;
+	background-color: rgba(255, 255, 255, 0.8);
+	left: 8.125rem;
+	top: 6.25rem;
+}
+
+/*llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll*/
+@media(max-width:600px){
+    h1{
+        font-size: 2rem;
+    }
+
+    .welcomeText{
+        font-size: 1.1rem;
+    }
+
+    h2, h3, p{
+        margin: 0 5% 0 5%;
+        width: 90%;
+    }
+
+    hr{
+        margin: 2rem 2rem;
+    }
+
+    .hc{
+        font-size: 2rem;
+    }
+
+    .logo{
+        top: 9rem;
+        left: 0;
+        font-size: 3rem;
+    }
+
+    /*Header and navigation*/
+    .openMenu{
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+
+    nav{
+        display: none;
+        height: 0;
+        position: absolute;
+        top: 3.125rem;
+        left: 0;
+        right: 0;
+        transition: 0.2s;
+        background-color: rgba(223, 233, 224, 0.9);
+        overflow: hidden;
+    }
+
+    nav ul{
+        display: block;
+        /* Firefox 3+, Firefox for Android 4+ */
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 3.125rem auto;
+        text-align: center
+    }
+
+    nav.active{
+        height: 25rem;
+        display: block;
+    }
+
+
+    /*Main*/
+    main{
+        margin: 30rem auto 15rem auto;
+        padding: 1rem 0.5rem 2rem 0.5rem;
+    }
+
+
+    .gallery img{
+        height: auto;
+        margin: 0;
+    }
+
+    /*Buffet*/
+    .buffet{
+        flex-direction: column;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .buffetItemOne, .buffetItemTwo{
+        width: 100%;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .buffetItemTwo h2, .buffetItemTwo p{
+        padding: 0;
+    }
+
+    /*Picture gallery with arrows*/
+    #gridparent{
+        width: 100%; 
+    }
+
+    .slideImage{
+        display: none;
+    }
+
+    .slideImage[data-active]{
+        display: block;
+        animation: fade-in 0.75s;
+    }
+
+    .slideImage[data-closing]{
+        display: block;
+        animation: fade-out 0.5s;
+    }
+
+    @keyframes fade-in{
+        0%{
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-out{
+        0%{
+            opacity: 1;
+        }
+
+        100%{
+            opacity: 0;
+        }
+    }
+
+    #gridItem3{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/salmonS.jpg");
+        font-size: 90%;
+        color: white;
+        min-height: 13.75rem;
+        text-shadow: 2px 1px 1px rgb(4, 10, 6);
+    }
+
+    /*Buttons*/
+    .carouselButton{
+        margin: 1rem 0.25rem;
+        border: none;
+        font-size: 2rem;
+        background-color: rgba(26, 26, 26, 0.1);
+        color: rgba(42, 71, 44, 0.9);
+    }
+
+    .carouselButton:hover, .carouselButton:focus{
+        background-color: rgba(26, 26, 26, 0.25);
+    }
+
+    /*Table*/
+    td.description{
+        padding-right: 0;
+    }
+
+    /*Form*/
+    form{
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    /*Foooter*/
+    footer{
+        flex-direction: column;
+    }
+
+}
+
+/*llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll*/
+@media(min-width:601px) and (max-width:1023px){
+    h1{
+        font-size: 3rem;
+    }
+
+    h2, h3, p{
+        margin: 0 10% 0 10%;
+        width: 80%;
+    }
+
+    hr{
+        margin: 2rem 6.5rem;
+    }
+
+    .hc{
+        font-size: 3rem;
+    }
+
+    .logo{
+        top: 10rem;
+        left: 0;
+        font-size: 7rem;
+    }
+
+    /*Header and navigation*/
+    .openMenu{
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-align: right;
+    }
+
+    nav{
+        display: none;
+        height: 0;
+        position: absolute;
+        top: 3.125rem;
+        left: 0;
+        right: 0;
+        transition: 0.2s;
+        background-color: rgba(223, 233, 224, 0.9);
+        overflow: hidden;
+    }
+
+    nav ul{
+        display: block;
+        /* Firefox 3+, Firefox for Android 4+ */
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 3.125rem auto;
+        text-align: center
+    }
+
+    nav.active{
+      height: 25rem;
+      display: block;
+    }
+
+    /*Main*/
+    main{
+        margin: 40rem auto 20rem auto;
+        padding: 2rem 1rem 5rem 1rem;
+    }
+
+    .gallery img{
+        width: 17.5rem;
+        height: 11.25rem;
+        margin: 0;
+    }
+
+
+    /*Bufet*/
+    .buffet{
+        margin: 5rem 3rem 3rem 3rem;
+    }
+
+    .buffetItemOne, .buffetItemTwo{
+        width: 50%;
+        text-align: left;
+    }
+
+    .buffetItemTwo h2, .buffetItemTwo p{
+        padding: 0.5rem;
+    }
+
+    /*Table*/
+    td.description{
+        padding-right: 5rem;
+    }
+
+    /*Form*/
+    form{
+        margin: 2rem 20%;
+        width: 60%;
+    }   
+
+
+    /*Grid images*/
+    #gridParent img{
+        width: auto;
+    }
+
+    #gridParent p{
+        text-align: center;
+        margin: 0;
+    }
+
+    #gridParent{
+       display: grid;
+       margin-top: 5rem;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(9, 1fr);
+       column-gap: 1rem;
+       row-gap: 0;
+    }
+
+    #gridItem1, #gridItem2, #gridItem3, #gridItem4, #gridItem5, #gridItem6, #gridItem7{
+       width: 100%;
+       padding-top: 1rem;
+       border-radius: 1.25rem;
+    }
+
+    #gridParent img{
+       width: 100%;
+       border-radius: 1.25rem;
+    }
+
+    #gridItem1{
+        padding-left: 1rem;
+        padding-top: 2rem;
+        width: 90%;
+        grid-row: 1/3;
+        grid-column: 1/3;
+    }
+
+    #gridItem2{
+        width: 80%;
+        padding: 1rem;
+        background-color: rgba(42, 71, 44, 0.9);
+        grid-row: 2/4;
+        grid-column: 3/5;
+    }
+
+
+    #gridItem3{
+        background-color: rgba(42, 71, 44, 0.9);
+        color: white;
+        grid-row: 3/7;
+        grid-column: 1/3;
+        font-size: 170%;
+    }
+
+    #gridItem4{
+        width: 100%;
+        grid-row: 4/6;
+        grid-column: 3/5;
+    }
+
+    #gridItem5{
+        grid-row: 6/8;
+        grid-column: 3/5;
+    }
+
+    #gridItem6{
+        grid-row: 7/9;
+        grid-column: 1/3;
+    }
+
+    #gridItem7{
+        width: 90%;
+        grid-row: 8/10;
+        grid-column: 3/5;
+    }
+
+    /*Buttons*/
+    .carouselButton, .helptext{
+       display: none;
+    }
+    
+
+}
+
+/*llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll*/
+@media(min-width: 1024px){
+    h1{
+        font-size: 3rem;
+    }
+
+    h2, h3, p{
+        margin: 0 10% 0 10%;
+        width: 80%;
+    }
+
+    hr{
+        margin: 2rem 10rem;
+    }
+
+    .hc{
+        font-size: 3rem;
+    }
+
+    .logo{
+        top: 18rem;
+        left: 0;
+        font-size: 6.5rem;
+    }
+
+    /*Main*/
+    main{
+        margin: 40rem auto 20rem auto;
+        padding: 2rem 1rem 5rem 1rem;
+    }
+
+    .gallery img{
+        width: 19.375rem;
+        height: 11.875rem;
+        margin: 0.5rem;
+    }
+
+    /*Bufet*/
+    .buffet{
+        margin: 5rem 3rem 3rem 3rem;
+    }
+
+    .buffetItemOne, .buffetItemTwo{
+        width: 50%;
+        text-align: left;
+    }
+
+    .buffetItemTwo h2, .buffetItemTwo p{
+        padding: 0.5rem;
+    }
+
+    /*Table*/
+    td.description{
+        padding-right: 6.25rem;
+    }
+
+    
+    /*Form*/
+    form{
+        margin: 2rem 20%;
+        width: 60%;
+    }  
+    
+    /*Grid images*/
+    #gridParent img{
+        width: auto;
+    }
+
+    #gridParent p{
+        text-align: center;
+        margin: 0;
+    }
+
+
+    #gridParent{
+        display: grid;
+        margin-top: 5rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        column-gap: 1rem;
+        row-gap: 0;
+    }
+
+    #gridItem1, #gridItem2, #gridItem3, #gridItem4, #gridItem5, #gridItem6, #gridItem7{
+        width: 100%;
+        padding-top: 1rem;
+        border-radius: 1.25rem;
+    }
+
+    #gridParent img{
+        width: 100%;
+        border-radius: 1.25rem;
+    }
+
+    #gridItem1{
+        padding-left: 1rem;
+        padding-top: 2rem;
+        width: 90%;
+        grid-row: 1/3;
+        grid-column: 2/4;
+    }
+
+    #gridItem2{
+        width: 80%;
+        padding: 1rem;
+        background-color: rgba(42, 71, 44, 0.9);
+        grid-row: 2/4;
+        grid-column: 4/6;
+    }
+
+
+    #gridItem3{
+        background-color: rgba(42, 71, 44, 0.9);
+        color: white;
+        grid-row: 3/7;
+        grid-column: 2/4;
+        font-size: 170%;
+    }
+
+    #gridItem4{
+        width: 110%;
+        grid-row: 4/6;
+        grid-column: 4/6;
+    }
+
+    #gridItem5{
+        grid-row: 6/8;
+        grid-column: 4/6;
+    }
+
+    #gridItem6{
+        grid-row: 7/9;
+        grid-column: 2/4;
+    }
+
+    #gridItem7{
+        width: 90%;
+        grid-row: 8/10;
+        grid-column: 4/6;
+    }
+
+    /*Buttons*/
+    .carouselButton, .helptext{
+        display: none;
+    }
+    
+}

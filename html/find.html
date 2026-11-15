@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Find - Haraldsson Cafe</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="../css/reset.css" rel="stylesheet" />
+        <link href="../css/main.css" rel="stylesheet" />
+        <link href="../images/icon.ico" rel="icon" />
+        <meta name="description" content="Welcome to Haraldsson Café, a café and restaurant located in the South of Sweden.
+        Check out the map to find to us." />
+        <script src="../js/main.js" type="module"></script>
+    </head>
+
+    <body>
+        <div id="findBody">
+            <header>
+                <h2 class="hc">H:C</h2>
+                <img src="../images/icon.ico" alt="Icon" class="iconNav" />
+
+            <!--<p class="openMenu">OPEN MENU</p>-->
+            <button class="openMenu">OPEN MENU</button>
+
+                <nav class="nav">
+                    <ul>
+                        <li><a href="../index.html">Start</a></li>
+                        <li class="menuNav"><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li class="weatherNav"><a href="weather.html">Weather</a></li>
+                        <li><a href="find.html" class="active">Find Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main>
+                <section>
+                    <h1 class="logo">Haraldsson Café</h1>
+                    <div class="checkmark">
+                        <p class="stem"></p>
+                        <p class="kick"></p>
+                    </div>
+    
+                    <h2>FIND US HERE</h2>
+                    <hr />
+    
+                    <picture>
+                        <source srcset="../images/mapL.png" media="(min-width: 601px)" />
+                        <source srcset="../images/mapS.png" media="(max-width: 600px)" />
+                        <img src="../images/mapL.png" alt="Map of Helsingborg" width="450"/>
+                    </picture>
+    
+                    <hr />
+                    <p>Addres: 23412 Addres to the Restaurant, Skåne, Sweden.</p>
+                </section>
+            </main>
+
+
+            <footer>
+                <address>
+                    <p class="heading" >Adress</p>
+                    <p>23412 Adress to the Restaurant</p>
+                </address>
+
+                <address>
+                    <p class="heading" >Phone</p>
+                    <p>(xxx) xxx-xxxx</p>
+                </address>
+
+                <address>
+                    <p class="heading" >Email</p>
+                    <p>haraldssonCafé@hc.hc</p>
+                </address>
+            </footer>
+        </div>
+    </body>
+</html>
