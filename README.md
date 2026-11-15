@@ -5,6 +5,11 @@ It was my first experience with HTML, CSS and JavaScript, and was a fun learning
 ### Homepage
 <img src="screenshots/homepage.png" width="600">
 
+The original project documentation from 2022 includes the website structure, target audience, responsive layout sketches and visual design mockups:
+
+- [Design Specification](docs/design-specification.pdf)
+- [Design Mockups](docs/cafe-design.pdf)
+
 ## Features
 - Café menu: Browse food and drink options.
 - Weather forecast: Search for a city and view a five-day weather forecast using the Open-Meteo API.
